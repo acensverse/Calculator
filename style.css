@@ -43,6 +43,8 @@ body {
   border-style: none;
   background-color: #243441;
   color: aliceblue;
+  outline: none;
+  padding: 0px;
 }
 
 .button-1,
@@ -66,6 +68,29 @@ button {
   border-radius: 25px;
   margin: 0.5rem;
   background-color: #243441;
-  box-shadow: 0px 1px 5px 0px black, 0px -1px 3px 0px whitesmoke;
+  box-shadow: 0px 1px 5px 0px black, 0px -1px 2.5px 0px whitesmoke;
   cursor: pointer;
+}
+
+button:active {
+  width: 5rem;
+  height: 4.5rem;
+  font-size: x-large;
+  font-weight: 600;
+  color: aliceblue;
+  border-style: none;
+  border-radius: 25px;
+  margin: 0.5rem;
+  background-color: #243441;
+  box-shadow: black 0px 1px 5px 0px inset, whitesmoke 0px -1px 2.5px 0px inset;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    margin-bottom: 100px;
+  }
 }
